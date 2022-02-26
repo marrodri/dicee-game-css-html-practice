@@ -1,5 +1,8 @@
+/* main element styles */
 
-
+body{
+	background-color: aqua;
+}
 header{
 	background-color: yellow;
 	/* display:; */
@@ -8,7 +11,10 @@ header{
 h1{
 	text-align: center;
 	font-size: 7rem;
+	font-family: 'Sonsie One', cursive;
 }
+
+/* class styles */
 .main-screen{
 	display: grid;
 
@@ -16,18 +22,28 @@ h1{
 
 }
 
-.dice{
-	display: grid;
-	background-color: red;
-	border-radius: 25%;
-	grid-row-start: [first-row] 20px [column-1] 30px [space1-row] 20px ;
-	grid-column: [first-col] 20px [row-1] 30px [space1-col] 20px;
+.player-name-display{
+
+	font-family: 'Caveat', cursive;
+	font-size: 5rem;
 }
+.dice1{
+	/* display: grid; */
+	width: 250px;
+	height: 250px;
+	background-color: blue;
+	/* display: static; */
+	position: fixed;
+	background-image: url('./images/dice1.png');
+	/* position: fixed; */
+	/* image-rendering: pixelated; */
+}
+.dice2{
+	/* display: grid; */
+	width: 250px;
+	height: 250px;
+	background-color: blue;
 
-
-/* #roll-1{}
-#roll-2{}
-#roll-3{}
-#roll-4{}
-#roll-5{}
-#roll-6{} */
+	background-image: url('./images/dice2.png');
+	/* image-rendering: pixelated; */
+}
